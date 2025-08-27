@@ -21,7 +21,7 @@ def main():
 
     visible_map = {
         "xʸ": "^", "⅟x": "1/",
-        "x²": "²"
+        "x²": "²", "√x": "'s √ ",
     }
 
     button_layout = [
@@ -44,6 +44,7 @@ def main():
             tokLenHistory.clear()
             localTokLenHistory.clear()
             core.set_workspace("")
+            return
         elif b == "←":
             entry.delete(0, tk.END)
             entry.insert(0, localworkspace)
@@ -57,8 +58,8 @@ def main():
             core.write_workspace(translation_map.get(b, b))
             tokLenHistory.append(len(translation_map.get(b, b)))
 
-            entry.delete(0, tk.END)
-            entry.insert(0, localworkspace)
+        entry.delete(0, tk.END)
+        entry.insert(0, localworkspace)
 
     for i, b in enumerate(button_layout):
         tk.Button(root, text=b, width=4, height=2,
