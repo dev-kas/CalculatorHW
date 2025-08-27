@@ -4,7 +4,7 @@
 
 This is a simple calculator program written in Python for educational purposes.
 
-The program allows you to perform basic arithmetic operations such as addition, subtraction, multiplication, and division, modulo, exponent, and roots, with support for decimal numbers and precedence control via parentheses.
+The program allows you to perform basic arithmetic operations such as addition, subtraction, multiplication, and division, modulo, exponent, and roots, with support for decimal numbers, precedence control via parentheses and an arbitrary precision.
 
 This program is made for educational purposes only and as a homework assignment. It is not intended for use in any production environment.
 
