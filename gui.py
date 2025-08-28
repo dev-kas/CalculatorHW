@@ -40,6 +40,7 @@ def main():
             core.run()
             entry.delete(0, tk.END)
             entry.insert(0, core.get_workspace())
+            entry.xview_moveto(1)
             localworkspace = ""
             tokLenHistory.clear()
             localTokLenHistory.clear()
@@ -60,6 +61,7 @@ def main():
 
         entry.delete(0, tk.END)
         entry.insert(0, localworkspace)
+        entry.xview_moveto(1)
 
     for i, b in enumerate(button_layout):
         tk.Button(root, text=b, width=4, height=2,
